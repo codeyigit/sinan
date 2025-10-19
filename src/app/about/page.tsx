@@ -1,4 +1,3 @@
-import Image from 'next/image';
 
 export default function About() {
   return (
@@ -89,7 +88,7 @@ export default function About() {
                 <div className="flex-1 pr-8 text-right">
                   <div className="bg-white p-6 rounded-lg shadow-lg">
                     <h3 className="text-xl font-semibold text-text-primary mb-2">
-                      Bachelor's Degree in Molecular Biology
+                      Bachelor&apos;s Degree in Molecular Biology
                     </h3>
                     <p className="text-secondary-green font-medium mb-2">Istanbul University</p>
                     <p className="text-text-secondary">

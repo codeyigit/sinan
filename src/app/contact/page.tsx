@@ -11,7 +11,7 @@ export default function Contact() {
               Get In Touch
             </h1>
             <p className="text-xl text-text-secondary max-w-3xl mx-auto">
-              I'm always interested in discussing research collaborations, 
+              I&apos;m always interested in discussing research collaborations, 
               scientific opportunities, and innovative projects in molecular biology.
             </p>
           </div>
@@ -195,7 +195,7 @@ export default function Contact() {
                 What types of collaborations are you interested in?
               </h3>
               <p className="text-text-secondary">
-                I'm open to various types of collaborations including joint research projects, 
+                I&apos;m open to various types of collaborations including joint research projects, 
                 academic partnerships, industry collaborations, and international research initiatives 
                 focused on molecular biology and cancer research.
               </p>
@@ -226,7 +226,7 @@ export default function Contact() {
                 Are you available for speaking engagements?
               </h3>
               <p className="text-text-secondary">
-                I'm available for speaking engagements, workshops, and presentations on molecular 
+                I&apos;m available for speaking engagements, workshops, and presentations on molecular 
                 biology, cancer research, and hazelnut-derived compounds. Please reach out to discuss details.
               </p>
             </div>

@@ -29,6 +29,7 @@ const ContactForm = () => {
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
+      console.error('Form submission error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -41,7 +42,7 @@ const ContactForm = () => {
       
       {submitStatus === 'success' && (
         <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-          Thank you for your message! I'll get back to you as soon as possible.
+          Thank you for your message! I&apos;ll get back to you as soon as possible.
         </div>
       )}
       
