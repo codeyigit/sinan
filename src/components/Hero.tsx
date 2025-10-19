@@ -1,16 +1,28 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-white to-accent-green/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in-up">
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <div className="mb-8 flex justify-center">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary-green to-secondary-green flex items-center justify-center text-white text-4xl font-bold shadow-lg">
-              SB
+            <div className="relative">
+              <div className="w-40 h-40 rounded-full overflow-hidden shadow-2xl ring-4 ring-white/20 ring-offset-4 ring-offset-transparent">
+                <Image
+                  src="/sinan.jpeg"
+                  alt="Sinan Baykara - Molecular Biologist"
+                  width={160}
+                  height={160}
+                  className="w-full h-full object-cover object-center"
+                  priority
+                />
+              </div>
+              {/* Decorative ring */}
+              <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-primary-green via-secondary-green to-accent-green opacity-20 animate-pulse"></div>
             </div>
           </div>
 

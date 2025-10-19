@@ -1,4 +1,6 @@
 
+import Image from 'next/image';
+
 export default function About() {
   return (
     <div className="min-h-screen bg-background">
@@ -18,7 +20,22 @@ export default function About() {
       </section>
 
       {/* Biography Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/dna_photo.jpeg"
+            alt="DNA and molecular biology research background"
+            fill
+            className="object-cover object-center"
+            priority={false}
+          />
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-white/85 backdrop-blur-sm"></div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Profile Image Placeholder */}
@@ -63,6 +80,7 @@ export default function About() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -227,7 +245,22 @@ export default function About() {
       </section>
 
       {/* Research Focus */}
-      <section className="py-20 bg-gradient-to-br from-primary-green to-secondary-green text-white">
+      <section className="py-20 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/dna_photo.jpeg"
+            alt="DNA and molecular biology research background"
+            fill
+            className="object-cover object-center"
+            priority={false}
+          />
+          {/* Gradient overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-green/90 via-secondary-green/80 to-accent-green/90"></div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -278,6 +311,7 @@ export default function About() {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </div>
